@@ -5,15 +5,15 @@ const intro = document.querySelector(".game-intro");
 const board = document.getElementById("game-board");
 
 const crashSound = new Audio();
-crashSound.src = "../Sounds/Avada_kedrava.wav.wav";
+crashSound.src = "./Sounds/Avada_kedrava.wav.wav";
 crashSound.volume = 0.1;
 
 const introSound = new Audio();
-introSound.src = "../Sounds/01. John Williams - Prologue.mp3";
+introSound.src = "./Sounds/01. John Williams - Prologue.mp3";
 crashSound.volume = 0.1;
 
 const voldemort = new Image();
-voldemort.src = "../Images/Voldemort-removebg-preview.png";
+voldemort.src = "./Images/Voldemort-removebg-preview.png";
 
 class GameObj {
   constructor(x, y, width, height, img) {
@@ -212,10 +212,10 @@ function startGame() {
   this.introSound = introSound.play();
 
   const bgImg = new Image();
-  bgImg.src = "../Images/night_forest2.jpg";
+  bgImg.src = "./Images/night_forest2.jpg";
 
   const harryImg = new Image();
-  harryImg.src = "../Images/HP.png";
+  harryImg.src = "./Images/HP.png";
 
   const backgroundImage = new BackgroundImage(
     0,
