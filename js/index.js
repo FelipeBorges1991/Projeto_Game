@@ -9,7 +9,7 @@ crashSound.src = "../Sounds/Avada_kedrava.wav.wav";
 crashSound.volume = 0.1;
 
 const introSound = new Audio();
-introSound.src = "/Sounds/01. John Williams - Prologue.mp3";
+introSound.src = "../Sounds/01. John Williams - Prologue.mp3";
 crashSound.volume = 0.1;
 
 const voldemort = new Image();
