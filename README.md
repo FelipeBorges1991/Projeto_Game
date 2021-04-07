@@ -14,3 +14,6 @@ The game is built in HTML, CSS and JavaScript.
 
 ## Link to play
 You can play the game [here](https://felipeborges1991.github.io/Projeto_Game/).
+
+## Info about the project
+You can find more info [here](https://slides.com/felipeborg/deck).
