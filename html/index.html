@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Styles/style.css" />
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <div class="game-intro">
+      <img
+        src="/Images/harry-potter-logo-png-1.png"
+        alt="logo with an arrow and a bow"
+        class="logo-img"
+      />
+      <br />
+      <button id="start-button">Start Game</button>
+      <h1>Instructions:</h1>
+      <ol>
+        <li>Use the up and down arrows to move Harry</li>
+        <li>Avoid Voldemort!!</li>
+      </ol>
+    </div>
+
+    <div id="game-board">
+      <canvas id="canvas" width="800" height="700"></canvas>
+    </div>
+
+    <script type="text/javascript" src="../js/index.js"></script>
+  </body>
 </html>
