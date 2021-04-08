@@ -3,6 +3,7 @@ const ctx = canvas.getContext("2d");
 
 const intro = document.querySelector(".game-intro");
 const board = document.getElementById("game-board");
+const gameOver = document.querySelector(".game-over");
 
 const crashSound = new Audio();
 crashSound.src = "./Sounds/Avada_kedrava.wav.wav";
@@ -187,17 +188,13 @@ class Game {
   }
 
   gameOver() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "red";
-    ctx.font = "100px Stencil Std, fantasy";
-    ctx.fillText("Game Over!", canvas.width / 5, 350);
-
-    ctx.font = "50px 'Andale Mono, monospace'";
-    ctx.fillStyle = "white";
-    ctx.fillText(`Your Final Score: ${this.score}`, canvas.width / 4, 450);
+    gameOver.style.display = "block";
+    document.getElementById("score").innerText = this.score;
+    board.style.display = "none";
+    document.getElementById("restart-button").onclick = () => {
+      gameOver.style.display = "none";
+      intro.style.display = "block";
+    };
   }
 
   clear = () => {

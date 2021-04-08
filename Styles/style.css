@@ -41,6 +41,38 @@ body {
   font-weight: bolder;
 }
 
+.game-over {
+  display: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  background-color: black;
+  align-content: center;
+  margin: auto;
+  padding: 70px;
+}
+
+.game-over h2 {
+  color: red;
+  font-size: 90px;
+  margin-bottom: 0;
+}
+
+.game-over p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 0;
+}
+
+.game-over button {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  background: none;
+  color: yellow;
+  padding: 20px 40px;
+}
+
 .logo-img {
   width: 700px;
 }
